@@ -9,39 +9,40 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- INSERIRE I LINK AL FONT RALEWAY, AL CSS RESET E AL CSS GENERALE -->
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
   </head>
   <body>
     <header>
-      <h1>Curriculum vitae <span>Mario Rossi</span></h1>
-      <h2>Web developer &amp; Consulente SEO</h2>
+      <h1>Curriculum Vitae<br /><span class="Autore">Mario Rossi</span></h1>
+      <h2>
+        <b>W</b><span class="descrizione">eb developer </span><b>&amp; C</b
+        ><span class="descrizione">onsulente </span><b>SEO</b>
+      </h2>
     </header>
-
-    <hr />
 
     <main>
       <section>
         <div>
-          <h2>Info personali</h2>
+          <h2 class="infopersonali">Info personali</h2>
           <figure>
-            <img src="assets/img/profilo.jpg" alt="Foto profilo" width="240" height="130" />
+            <img class="workspaceimage" src="assets/img/profilo.jpg" alt="Foto profilo" />
             <figcaption>La mia postazione di lavoro!</figcaption>
           </figure>
           <address>
-            <img src="assets/img/calendar.svg" alt="" width="20" height="20" />
-            <b>Data di nascita:</b> 22-10-1993<br />
-            <img src="assets/img/smartphone.svg" alt="" width="20" height="20" /> <b>Telefono:</b>
+            <img class="icone" src="assets/img/calendar.svg" alt="" />
+            <span class="datipersonali">Data di nascita:</span> 22-10-1993<br />
+            <img class="icone" src="assets/img/smartphone.svg" alt="" />
+            <span class="datipersonali">Telefono:</span>
             <a href="tel:0610203040" title="chiamami per un colloquio">06-10203040</a><br />
-            <img src="assets/img/whatsapp.svg" alt="" width="20" height="20" /> <b>Whatsapp:</b>
+            <img class="icone" src="assets/img/whatsapp.svg" alt="" />
+            <span class="datipersonali">Whatsapp:</span>
             <a href="https://wa.me/0610203040" title="mandami un messaggio">06-10203040</a>
           </address>
-          <p><b>Su di me:</b></p>
+          <p id="strong"><b>Su di me:</b></p>
           <blockquote>
             <p>
               "Sembra sempre impossibile, finché non viene fatto." <cite>(Nelson Mandela)</cite>
@@ -83,6 +84,8 @@
         </div>
       </section>
 
+      <hr />
+
       <section>
         <h2>Competenze</h2>
 
@@ -110,9 +113,8 @@
           </dl>
         </div>
       </section>
+      <hr />
     </main>
-
-    <hr />
 
     <footer>
       <p>
@@ -124,7 +126,7 @@
         >
       </p>
       <p><small>Autorizzo il trattamento dei dati personali secondo il decreto vigente</small></p>
-      <hr />
+      <br />
       <p>Copyright &copy;2021 - Tutti i diritti riservati</p>
     </footer>
   </body>
